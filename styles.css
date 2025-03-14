@@ -1,0 +1,21 @@
+.gameBoard {
+    width: clamp(500px, 50vh, 1000px);
+    height: clamp(500px, 50vh, 1000px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 1rem;
+}
+.gameCell {
+    text-transform: uppercase;
+    background-color: gray;
+    color: black;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
